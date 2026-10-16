@@ -82,7 +82,7 @@
   .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
     background:
       linear-gradient(to bottom, rgb(241 246 248 / 1) 0%, rgb(241 246 248 / .9) 12%, rgb(241 246 248 / 0) 30%),
-      linear-gradient(to right, rgb(241 246 248 / .94) 0%, rgb(241 246 248 / .88) 34%, rgb(241 246 248 / .5) 50%, transparent 64%); }
+      linear-gradient(to right, rgb(241 246 248 / .66) 0%, rgb(241 246 248 / .42) 32%, rgb(241 246 248 / .12) 48%, transparent 58%); }
   .hero__copy { max-width: min(42rem, 50vw); bottom: 0; top: 0; display: flex; flex-direction: column; justify-content: center; padding-top: 3rem; }
   .hero__label { font-size: var(--v-t-sm); font-weight: 500; color: var(--v-ink-soft); margin-bottom: var(--v-4); }
   .hero__copy h1 { font-size: clamp(2.3rem, 1rem + 2.6vw, 3.5rem); line-height: 1; }
@@ -351,6 +351,15 @@
           </div>
         </div>
         <div class="hero__scrim" aria-hidden="true"></div>
+
+        <ul class="tags" data-v-cue="0 0.5 0 0.1" data-v-rise="0" aria-label="Чем занимаются дети: конструирование, программирование, датчики, моторы, командная работа, возраст 6–10 лет">
+          <li class="tag" style="--x: 74%; --y: 86%; --r: -5deg; --i: 0">6–10 лет</li>
+          <li class="tag" style="--x: 86%; --y: 74%; --r: 4deg; --i: 1">моторы</li>
+          <li class="tag" style="--x: 78%; --y: 33%; --r: 3deg; --i: 2">датчики</li>
+          <li class="tag" style="--x: 44%; --y: 62%; --r: -3deg; --i: 3">конструирование</li>
+          <li class="tag" style="--x: 58%; --y: 72%; --r: 2deg; --i: 4">код</li>
+          <li class="tag" style="--x: 55%; --y: 34%; --r: -4deg; --i: 5">команда</li>
+        </ul>
 
         <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.5 0 0.1">
           <p class="hero__label">Школа робототехники · {{город}}</p>
